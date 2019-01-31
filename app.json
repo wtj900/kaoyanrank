@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/welcome/welcome"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000"
+  }
+}
