@@ -1,7 +1,7 @@
 <!--pages/welcome/welcome.wxml-->
 <view class="container">
   <image class="login-bg-image" src="/static/images/welcome/ic_bg.png"></image>
-  <text class="login-title">微信登录</text>
+  <!-- <text class="login-title">微信登录</text> -->
   <image class="login-logo-image" src="/static/images/welcome/ic_logo.png"></image>
   <text class="login-tip">考研人都在用的考研排名小程序</text>
   <view class="login-confirm-btn" bindtap='goToIndex'>

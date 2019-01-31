@@ -3,8 +3,8 @@
     "pages/welcome/welcome"
   ],
   "window": {
-    "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#fff",
     "backgroundColor": "#000"
   }
 }
