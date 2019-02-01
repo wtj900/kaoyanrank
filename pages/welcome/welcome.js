@@ -9,7 +9,9 @@ Page({
   },
 
   goToIndex: function () {
-    
+    wx.navigateTo({
+      url: "../home/home"
+    })
   },
 
   /**

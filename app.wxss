@@ -1,0 +1,12 @@
+.userinfo-avatar {
+  width: 144rpx;
+  height: 144rpx;
+  margin: 180rpx;
+  margin-bottom: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  font-size: 12pt;
+  color: #333;
+  margin-bottom: 192rpx;
+}
