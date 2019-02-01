@@ -1,6 +1,6 @@
 // pages/home/home.js
 
-var userinfo = wx.getStorageSync('userinfo')
+const userinfo = wx.getStorageSync('userinfo')
 
 Page({
 

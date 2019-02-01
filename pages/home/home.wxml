@@ -4,7 +4,7 @@
   <image class="login-bg-image" src="/static/images/welcome/ic_bg.png"></image>
 
   <!--已登录-->
-  <block wx:if="{{userinfo!=null}}">
+  <block wx:if="{{userinfo}}">
     <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
     <text class="userinfo-nickname">{{userinfo.nickName}}</text>
     <view class="action-btn" bindtap='goToEstimate'>
