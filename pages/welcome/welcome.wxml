@@ -6,7 +6,7 @@
   <text class="login-tip">考研人都在用的考研排名小程序</text>
   <view class="login-confirm-btn" bindtap='tapToLogin'>
     <image class="login-confirm-btn-image" src="/static/images/welcome/ic_weixin.png"></image>
-    微信登录
+    微信授权快捷登录
   </view>
   <text class="login-message">登录后体验完整功能</text>
 </view>
