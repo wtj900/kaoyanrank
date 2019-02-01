@@ -4,7 +4,7 @@
   <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
   <text class="userinfo-nickname">{{userinfo.nickName}}</text>
   <view class="action-btn" bindtap='goToEstimate'>
-    估分排名
+    估分排名 
   </view>
   <view class="action-btn" bindtap='goToGetCourse'>
     领取推荐课程
