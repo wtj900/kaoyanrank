@@ -8,33 +8,45 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userinfo: userinfo,
-    isLogin: false
+    userinfo: userinfo
   },
+
+  changeUserInfo(userinfo) {
+    this.setData({
+      userinfo: userinfo
+    })
+    wx.setNavigationBarTitle({
+      title: userinfo == null ? '微信登录' : '中公考研排名'
+    })
+  },
+
+  /**
+   * 登录，获取用户信息
+   */
   onGetUserInfo: function(e) {
     wx.setStorageSync('userinfo', e.detail.userInfo)
-    this.setData({
-      isLogin: true,
-      userinfo: e.detail.userInfo
-    })
-    wx.setNavigationBarTitle({
-      title: '中公考研排名'
-    })
+    this.changeUserInfo(e.detail.userInfo);
   },
+
+  /**
+   * 估分排名
+   */
   goToEstimate: function() {
     wx.removeStorageSync('userinfo')
-    this.setData({
-      isLogin: false,
-      userinfo: null
-    })
-    wx.setNavigationBarTitle({
-      title: '微信登录'
-    })
+    this.changeUserInfo(null);
     console.log("goToEstimate");
   },
+
+  /**
+   * 领取推荐课程
+   */
   goToGetCourse: function() {
     console.log("goToGetCourse");
   },
+
+  /**
+   * 各省复试群
+   */
   goToInterviewGroup: function() {
     console.log("goToInterviewGroup");
   },
@@ -43,18 +55,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    if (userinfo) {
-      wx.setNavigationBarTitle({
-        title: '中公考研排名'
-      })
-      this.setData({
-        isLogin: true
-      })
-    } else {
-      wx.setNavigationBarTitle({
-        title: '微信登录'
-      })
-    }
+    this.changeUserInfo(userinfo)
   },
 
   /**
