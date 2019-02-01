@@ -4,9 +4,9 @@
   <!-- <text class="login-title">微信登录</text> -->
   <image class="login-logo-image" src="/static/images/welcome/ic_logo.png"></image>
   <text class="login-tip">考研人都在用的考研排名小程序</text>
-  <view class="login-confirm-btn" bindtap='tapToLogin'>
-    <image class="login-confirm-btn-image" src="/static/images/welcome/ic_weixin.png"></image>
-    微信授权快捷登录
-  </view>
+  <button class="login-confirm-btn" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+    <image class="login-confirm-btn-image" src="/static/images/welcome/ic_weixin.png" ></image>
+    <text>微信授权快捷登录</text>
+  </button> 
   <text class="login-message">登录后体验完整功能</text>
 </view>

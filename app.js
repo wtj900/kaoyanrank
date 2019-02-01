@@ -5,10 +5,10 @@ App({
    */
   onLaunch: function () {
     console.log("onLaunch")
-    let timer = setTimeout(() => {
-      clearTimeout(timer)
-      this.direct()
-    }, 1000)
+    // let timer = setTimeout(() => {
+    //   clearTimeout(timer)
+    //   this.direct()
+    // }, 1000)
   },
 
   direct() {

@@ -8,33 +8,37 @@ Page({
     
   },
 
-  tapToLogin: function () {
-    wx.login({
-      success(res) {
-        console.log(res)
-        // if (res.code) {
-        //   // 发起网络请求
-        //   wx.request({
-        //     url: 'https://test.com/onLogin',
-        //     data: {
-        //       code: res.code
-        //     }
-        //   })
-        // } else {
-        //   console.log('登录失败！' + res.errMsg)
-        // }
-      }
-    })
-    wx.getUserInfo({
-      success(res) {
-        console.log(res)
-        wx.setStorageSync('userinfo', res.userInfo)
+  // tapToLogin: function () {
+  //   wx.login({
+  //     success(res) {
+  //       console.log(res)
+  //       // if (res.code) {
+  //       //   // 发起网络请求
+  //       //   wx.request({
+  //       //     url: 'https://test.com/onLogin',
+  //       //     data: {
+  //       //       code: res.code
+  //       //     }
+  //       //   })
+  //       // } else {
+  //       //   console.log('登录失败！' + res.errMsg)
+  //       // }
+  //     }
+  //   })
+  //   wx.getUserInfo({
+  //     success(res) {
+  //       console.log(res)
+  //       wx.setStorageSync('userinfo', res.userInfo)
 
-        wx.navigateTo({
-          url: "../home/home"
-        })
-      }
-    })
+  //       wx.navigateTo({
+  //         url: "../home/home"
+  //       })
+  //     }
+  //   })
+  // },
+
+  onGetUserInfo: function (e) {
+    wx.setStorageSync('userinfo', e.detail.userInfo)
   },
 
   /**
