@@ -5,22 +5,6 @@ App({
    */
   onLaunch: function () {
     console.log("onLaunch")
-    // let timer = setTimeout(() => {
-    //   clearTimeout(timer)
-    //   this.direct()
-    // }, 1000)
-  },
-
-  direct() {
-    var userinfo = wx.getStorageSync('userinfo')
-    if (userinfo) {
-      wx.redirectTo({
-        url: "/pages/home/home"
-      })
-    }
-    else {
-
-    }
   },
 
   /**

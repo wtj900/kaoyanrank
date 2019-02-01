@@ -1,15 +1,31 @@
 <!--pages/home/home.wxml-->
 <view class="container">
+  <!--背景图片-->
   <image class="login-bg-image" src="/static/images/welcome/ic_bg.png"></image>
-  <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
-  <text class="userinfo-nickname">{{userinfo.nickName}}</text>
-  <view class="action-btn" bindtap='goToEstimate'>
-    估分排名 
-  </view>
-  <view class="action-btn" bindtap='goToGetCourse'>
-    领取推荐课程
-  </view>
-  <view class="action-btn" bindtap='goToInterviewGroup'>
-    各省复试群
-  </view>
+
+  <!--已登录-->
+  <block wx:if="{{isLogin==true}}">
+    <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userinfo.nickName}}</text>
+    <view class="action-btn" bindtap='goToEstimate'>
+      估分排名
+    </view>
+    <view class="action-btn" bindtap='goToGetCourse'>
+      领取推荐课程
+    </view>
+    <view class="action-btn" bindtap='goToInterviewGroup'>
+      各省复试群
+    </view>
+  </block>
+
+  <!--未登录-->
+  <block wx:else>
+    <image class="login-logo-image" src="/static/images/welcome/ic_logo.png"></image>
+    <text class="login-tip">考研人都在用的考研排名小程序</text>
+    <button class="login-confirm-btn" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+      <image class="login-confirm-btn-image" src="/static/images/welcome/ic_weixin.png"></image>
+      <text>微信授权快捷登录</text>
+    </button>
+    <text class="login-message">登录后体验完整功能</text>
+  </block>
 </view>
