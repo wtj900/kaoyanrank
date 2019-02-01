@@ -9,5 +9,9 @@
     "navigationBarTextStyle": "black",
     "backgroundTextStyle": "dark",
     "backgroundColor": "#fff"
+  },
+  "networkTimeout": {
+    "request": 10000
   }
+
 }

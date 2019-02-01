@@ -1,11 +1,14 @@
 // pages/home/home.js
+
+var userinfo = wx.getStorageSync('userinfo')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userinfo: userinfo
   },
 
   goToEstimate: function () {

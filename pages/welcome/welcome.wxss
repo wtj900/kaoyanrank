@@ -10,19 +10,14 @@
   height: 100%;
   z-index: -100;
 }
-.login-title {
-  margin-top: 60rpx;
-  text-align: center;
-}
 .login-logo-image {
   width: 360rpx;
   height: 80rpx;
-  margin-top: 204rpx;
+  margin: 204rpx 0 40rpx;
 }
 .login-tip {
   font-size: 9pt;
   color: #333;
-  margin-top: 40rpx;
 }
 .login-confirm-btn {
   display: flex;
@@ -34,8 +29,8 @@
   font-size: 13pt;
   line-height: 84rpx;
   color: #fff;
-  border-radius: 50px;
-  margin-top: 590rpx;
+  border-radius: 42rpx;
+  margin: 590rpx 0 30rpx;
 }
 .login-confirm-btn:active {
   opacity: .8;
@@ -48,5 +43,4 @@
 .login-message {
   font-size: 9pt;
   color: #888;
-  margin-top: 30rpx;
 }

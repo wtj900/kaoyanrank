@@ -1,8 +1,8 @@
 <!--pages/home/home.wxml-->
 <view class="container">
   <image class="login-bg-image" src="/static/images/welcome/ic_bg.png"></image>
-  <image class="userinfo-avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
-  <text class="userinfo-nickname">唐伯虎</text>
+  <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
+  <text class="userinfo-nickname">{{userinfo.nickName}}</text>
   <view class="action-btn" bindtap='goToEstimate'>
     估分排名
   </view>
